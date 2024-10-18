@@ -574,6 +574,16 @@ extends <a href="HumanEntity.html" title="interface in org.bukkit.entity">HumanE
 <div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
 <div class="block">Gets the simulation distance for this player</div>
 </div>
+<div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="../inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a></code></div>
+<div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getSkull()" class="member-name-link">getSkull</a>()</code></div>
+<div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
+<div class="block">Get a skull item of a player.</div>
+</div>
+<div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6"><code><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a><wbr>&lt;<a href="../inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&gt;</code></div>
+<div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6"><code><a href="#getSkullAsynchronously()" class="member-name-link">getSkullAsynchronously</a>()</code></div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3 method-summary-table-tab6">
+<div class="block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
+</div>
 <div class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="https://javadoc.io/doc/org.jetbrains/annotations/24.1.0/org/jetbrains/annotations/Nullable.html" title="class or interface in org.jetbrains.annotations" class="external-link">@Nullable</a> <a href="Entity.html" title="interface in org.bukkit.entity">Entity</a></code></div>
 <div class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3"><code><a href="#getSpectatorTarget()" class="member-name-link">getSpectatorTarget</a>()</code></div>
 <div class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab3">
@@ -8130,6 +8140,32 @@ extends <a href="HumanEntity.html" title="interface in org.bukkit.entity">HumanE
 <dt>Parameters:</dt>
 <dd><code>message</code> - The death message to show the player</dd>
 <dd><code>killer</code> - The entity that killed the player</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getSkull()">
+<h3>getSkull</h3>
+<div class="member-signature"><span class="return-type"><a href="../inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a></span>&nbsp;<span class="element-name">getSkull</span>()</div>
+<div class="block">Get a skull item of a player.
+ This method runs on main thread, which may freeze the server.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>A skull ItemStack of the player</dd>
+</dl>
+</section>
+</li>
+<li>
+<section class="detail" id="getSkullAsynchronously()">
+<h3>getSkullAsynchronously</h3>
+<div class="member-signature"><span class="annotations"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Deprecated.html" title="class or interface in java.lang" class="external-link">@Deprecated</a>(<a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Deprecated.html#forRemoval()" title="class or interface in java.lang" class="external-link">forRemoval</a>=true)
+</span><span class="return-type"><a href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/CompletableFuture.html" title="class or interface in java.util.concurrent" class="external-link">CompletableFuture</a>&lt;<a href="../inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&gt;</span>&nbsp;<span class="element-name">getSkullAsynchronously</span>()</div>
+<div class="deprecation-block"><span class="deprecated-label">Deprecated, for removal: This API element is subject to removal in a future version.</span></div>
+<div class="block">Get a skull item of a player.
+ This method runs on main thread, which may freeze the server.</div>
+<dl class="notes">
+<dt>Returns:</dt>
+<dd>A CompletableFuture of the skull ItemStack of the player</dd>
 </dl>
 </section>
 </li>

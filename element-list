@@ -161,3 +161,6 @@ org.purpurmc.purpur.event.player
 org.purpurmc.purpur.language
 org.spigotmc
 org.spigotmc.event.player
+space.vectrix.ignite
+space.vectrix.ignite.mod
+space.vectrix.ignite.util
